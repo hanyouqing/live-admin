@@ -23,7 +23,11 @@ export default function DashboardPage() {
           ["待处理举报", stats?.open_reports],
           ["待审案件", stats?.pending_cases],
           ["今日礼物", stats?.gifts_today],
-          ["今日金币", stats?.coins_today],
+          ["今日礼物币", stats?.coins_today],
+          ["投稿数", stats?.posts],
+          ["商品数", stats?.products],
+          ["今日已支付订单", stats?.orders_today],
+          ["今日充值币", stats?.paid_coins_today],
         ].map(([label, value]) => (
           <div className="card" key={String(label)}>
             <div className="muted">{label}</div>
