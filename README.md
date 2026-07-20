@@ -16,7 +16,7 @@ npm run dev
 
 打开 http://localhost:3001
 
-默认管理员：`admin` / `admin123456`（可用环境变量 `ADMIN_USERNAME` / `ADMIN_PASSWORD` 覆盖）
+默认管理员：本地 `APP_ENV=dev` 时可引导创建 `admin`（密码见 `ADMIN_PASSWORD`，默认仅开发用）。生产必须设置强 `ADMIN_PASSWORD`（≥12）与强 `JWT_SECRET`。
 
 ## 功能
 
